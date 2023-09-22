@@ -1,22 +1,22 @@
 nav {
-    background-color: #C7DAD9;
+    background-color: #033257;
     padding: 5px;
 }
 
 nav a {
-    color:black ;
+    color:white ;
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: black;
+    color: #F49BA2;
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid #E9E0E5;
+    border: 1px solid #033257;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
