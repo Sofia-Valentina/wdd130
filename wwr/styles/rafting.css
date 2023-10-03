@@ -72,6 +72,11 @@ article {
     top: 300px;  
 }
 
+article img {
+    float: right;
+    width: 300px;
+} 
+
 footer img {
     width: 20px;
 }
@@ -88,8 +93,3 @@ footer img {
     width: 100%;
     height: auto;
 }
-
-.article_img {
-     float: right;
-     width: 300px;
-} 

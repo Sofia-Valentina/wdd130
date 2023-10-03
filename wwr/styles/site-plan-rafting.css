@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap');
 
 :root {
-    --primary-color: #E9ECECff;
-    --secondary-color: #9FA4A5ff;
-    --accent1-color: #285439ff;
-    --accent2-color: #2C3529ff;
+    --primary-color: #285439ff;
+    --secondary-color: #2C3529ff;
+    --accent1-color: #9FA4A5ff;
+    --accent2-color: #E9ECECff;
 
     --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Open Sans', sans-serif;
 
-    --nav-background-color: #285439ff;
-    --nav-link-color: #E9ECECff;
-    --nav-hover-link-color: #2C3529ff;
-    --nav-hover-background-color: #9FA4A5ff;
+    --nav-background-color: #E9ECECff;
+    --nav-link-color: #285439ff;
+    --nav-hover-link-color: #E9ECECff;
+    --nav-hover-background-color: #2C3529ff;
 }
 
 body {
