@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap');
 
 :root {
-    --primary-color: #E9ECECff;
+    --primary-color: #2C3529ff;
     --secondary-color: #9FA4A5ff;
     --accent1-color: #285439ff;
-    --accent2-color: #2C3529ff;
+    --accent2-color: #E9ECECff;
 
     --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Open Sans', sans-serif;
 
-    --nav-background-color: #285439ff;
-    --nav-link-color: #E9ECECff;
-    --nav-hover-link-color: #2C3529ff;
-    --nav-hover-background-color: #9FA4A5ff;
+    --nav-background-color: #E9ECECff;
+    --nav-link-color: #285439ff;
+    --nav-hover-link-color: #E9ECECff;
+    --nav-hover-background-color: #2C3529ff;
 }
 
 body {
@@ -21,9 +21,17 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2rem;
+    position: absolute;
+    top: 3rem;
+    left: 20rem;
+    background-color: #E9ECECff;
 }
 
 header {
@@ -56,3 +64,32 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+
+article {
+    position: absolute;
+    background-color: rgb(233, 236, 236, 0.7);
+    padding: 25px;
+    top: 300px;  
+}
+
+footer img {
+    width: 20px;
+}
+
+/* Class Selectors */
+
+.hero {
+   position: relative;
+   text-align: center; 
+} 
+
+.hero_img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.article_img {
+     float: right;
+     width: 300px;
+} 
