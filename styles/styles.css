@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,26 +11,65 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main{
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside{
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+
 nav {
-    background-color: #F1DDDA;
-    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #6A33AA;
+    padding: 1rem;
 }
 
 nav a {
-    color:#D15611;
     display: block;
-    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 h1 {
-    color: #012625;
+    color: #6A33AA;
     padding: .5rem;
+    border-bottom-style: ridge;
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid #F1DDDA;
+    border: 1px solid #FFFFFF;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -44,21 +85,15 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #F1DDDA;
+    border: 1px solid #eae1ea;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 p {
     margin: 1rem;
-}
-
-aside {
-    width: 20rem;
-    text-align: center;
-    position: relative;
 }
 
 aside img {
@@ -70,6 +105,8 @@ aside h2 {
     position: absolute;
     top: 70px;
     left: 110px;
+    color: #FFFFFF;
+    font-weight: 700;
 }
 
 footer {
@@ -83,13 +120,12 @@ footer {
 
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     padding: 1rem;
-    background-color: #F1DDDA;
+    background-color: #eae1ea;
     color: #000;
 }
 
 .indent {
     padding-left: 2rem;
 }
-
