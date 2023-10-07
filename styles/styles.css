@@ -18,12 +18,6 @@ footer {
     margin: 0 auto;
 }
 
-header,
-footer {
-    max-width: 840px;
-    margin: 0 auto;
-}
-
 .grid {
     display: grid;
     align-items: center;
