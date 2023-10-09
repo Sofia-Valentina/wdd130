@@ -1,42 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@1,300&display=swap');
 
 :root {
     --primary-color: #2C3529ff;
     --secondary-color: #9FA4A5ff;
     --accent1-color: #285439ff;
-    --accent2-color: #E9ECECff;
+    --accent2-color: #F1F3F4;
 
-    --heading-font: 'Roboto', sans-serif;
+    --heading-font: 'Merriweather';
     --paragraph-font: 'Open Sans', sans-serif;
 
-    --nav-background-color: #E9ECECff;
+    --nav-background-color: #F1F3F4;
     --nav-link-color: #285439ff;
-    --nav-hover-link-color: #E9ECECff;
-    --nav-hover-background-color: #2C3529ff;
+    --nav-hover-link-color: #F1F3F4;
+    --nav-hover-background-color: #84AC53;
 }
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width:840px;
     padding: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    font-weight: 400;
 }
 
 h1 {
-    font-size: 2rem;
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     left: 20rem;
-    background-color: #E9ECECff;
+    font-size: 4.1rem;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, .60);
+    letter-spacing: .05em;
+    margin-bottom: 40px;
+    color: #F1F3F4;
+    left: 10px;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 header {
-    padding: 20px;
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 12px;
     background-color: var(--accent1-color);
+}
+
+header img {
+    width: 80px;
+    height: auto;
 }
 
 p {
@@ -45,7 +67,8 @@ p {
 
 nav {
     background-color: var(--nav-background-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
     display: flex;
 }
 
@@ -56,7 +79,8 @@ nav a {
     padding: 1rem;
 }
 
-nav a:link, nav a:visited {
+nav a:link,
+nav a:visited {
     color: var(--nav-link-color);
 }
 
@@ -67,29 +91,65 @@ nav a:hover {
 
 article {
     position: absolute;
-    background-color: rgb(233, 236, 236, 0.7);
+    background-color: rgb(233, 236, 236, 0.8);
     padding: 25px;
-    top: 300px;  
+    top: 15rem;
+    margin-bottom: 40px;
 }
 
 article img {
     float: right;
-    width: 300px;
-} 
+    width: 15rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
 
 footer img {
     width: 20px;
 }
 
+
 /* Class Selectors */
 
 .hero {
-   position: relative;
-   text-align: center; 
-} 
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 .hero_img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.history {
+    padding: 100px;
+    margin: 1rem auto;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.adventures {
+    text-align: center;
+    background-color: var(--accent2-color);
+    margin: 1rem auto;
+    padding: 2px;
+}
+
+.adventures div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.adventures img {
+    width: 20rem;
 }
