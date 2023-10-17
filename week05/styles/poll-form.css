@@ -67,17 +67,20 @@ input[type="checkbox"] {
 }
 
 button {
-    margin: 1rem;
+    margin: 2rem;
     background-color: rgb(57, 0, 111);
     color: #fff;
     border: none;
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
+    width: 200px;
+    justify-self: center;
 }
 
 button:hover {
     background-color: rgb(130, 5, 247);
+    color: rgb(46, 36, 50);
 }
 
 footer {
@@ -95,11 +98,11 @@ footer {
 }
 
 .column1 {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 4fr;
     margin: 0.5rem 0;
 }
 
 .column2 {
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 1fr;
     margin: 0.5rem 0;
 }
