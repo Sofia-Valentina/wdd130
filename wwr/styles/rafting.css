@@ -18,7 +18,7 @@
 
 body {
     font-family: var(--paragraph-font);
-    max-width:840px;
+    max-width: 840px;
     padding: 20px;
 }
 
@@ -29,7 +29,7 @@ h2 {
     font-weight: 400;
 }
 
-h1 {
+.h1_about {
     position: absolute;
     top: 1rem;
     left: 20rem;
@@ -103,6 +103,7 @@ article img {
 }
 
 footer {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,4 +153,109 @@ footer img {
 
 .adventures img {
     width: 20rem;
+}
+
+/* Contact us page css */
+
+.banner {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 1rem;
+}
+
+.banner_img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.headquarters {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    padding: 1rem;
+}
+
+.map iframe {
+    width: 500px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.team {
+    display: grid;
+}
+
+.team_text {
+    text-align: center;
+    padding: 1rem;
+}
+
+.team_imgs {
+    text-align: center;
+    display: flex;
+}
+
+.team_imgs img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+.form {
+    background-color: #F1F3F4;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #F1F3F4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form_text {
+    text-align: center;
+    padding: 1rem;
 }
