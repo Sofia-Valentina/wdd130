@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whitewater Rafting| Contact us page</title>
-    <meta name="description" content="This page will be a 'Contact Us' page which may provide contact information and a form to obtain user information, including questions and comments.">
+    <meta name="description"
+        content="This page will be a 'Contact Us' page which may provide contact information and a form to obtain user information, including questions and comments.">
     <meta name="author" content="Sofia Nieves">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -68,31 +69,28 @@
                 <h2>Send Us a Message</h2>
                 <p>Send us a message and we'll respond within 24 hours.</p>
             </div>
-            <form action="submit_form.php" method="post">
+            <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label>
-                    <select>
-                        <option value="">Purpose of the message... </option>
-                        <option value="General Inquiry">General Inquiry</option>
-                        <option value="Reservation Question">Reservation Question</option>
-                        <option value="Website Suggestion">Website Suggestion</option>
-                    </select>
-                </label>
+                <label for="optionA">• General Inquiry <input type="radio" name="answer" value="a" id="optionA"></label><br>
+
+                <label for="optionB">• Reservation Question<input type="radio" name="answer" value="b" id="optionB"></label><br>
+
+                <label for="optionC">• Website Suggestion<input type="radio" name="answer" value="c" id="optionC"></label><br>
 
                 <label for="message">Message:</label>
-                <textarea id="message" id="message"name="message" rows="4" required></textarea>
+                <textarea id="message" id="message" name="message" rows="4" required></textarea>
 
                 <label>
                     <input type="checkbox" id="subscribe" name="subscribe" value="yes">
                     Please subscribe me to the monthly newsletter
                 </label>
 
-                <input type="submit" value="Submit">
+                <button type="submit" value="submit">Submit</button>
             </form>
         </section>
     </main>

@@ -13,7 +13,7 @@
     --nav-background-color: #F1F3F4;
     --nav-link-color: #285439ff;
     --nav-hover-link-color: #F1F3F4;
-    --nav-hover-background-color: #84AC53;
+    --nav-hover-background-color: rgb(62, 128, 87);
 }
 
 body {
@@ -213,6 +213,7 @@ footer img {
 }
 
 form {
+    display: grid;
     max-width: 400px;
     margin: 0 auto;
     background-color: #F1F3F4;
@@ -241,8 +242,8 @@ textarea {
     resize: vertical;
 }
 
-input[type="submit"] {
-    background-color: #007bff;
+button{
+    background-color: var(--accent1-color);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -251,8 +252,8 @@ input[type="submit"] {
     margin-top: 20px;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
+button:hover {
+    background-color: rgb(62, 128, 87);
 }
 
 .form_text {
