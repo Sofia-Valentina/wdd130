@@ -310,7 +310,8 @@ button:hover {
     margin-bottom: 20px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -339,9 +340,8 @@ th {
     margin-top: 50px;
 }
 
-
 .signup-form {
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -362,18 +362,77 @@ th {
     border-radius: 3px;
 }
 
-.form-group button {
+.container_home {
+    position: relative;
+    background-color: var(--accent2-color);
+    padding: 3rem;
+    margin-top: 1rem;
+}
+
+.item1 img {
+    width: 35rem;
+
+}
+
+.item2 {
+    position: absolute;
+    background-color: var(--accent1-color);
+    width: 27rem;
+    top: 35%;
+    left: 45%;
+    text-align: center;
+    color: #F1F3F4;
+}
+
+.item2 h3 {
+    color: #F1F3F4;
+}
+
+.button_home {
+    text-decoration: none;
     display: block;
     margin: 10px auto;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    width: 100px;
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-weight: 700;
 }
 
-.form-group button:hover {
-    background-color: #0056b3;
+.button_home:hover {
+    background-color: var(--primary-color);
+    color: #F1F3F4;
 }
 
+.trips_home {
+    display: grid;
+    text-align: center;
+    padding: 2rem;
+}
+
+.trips_row_home {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.trips_row_home img {
+    width: 16rem;
+    justify-content: space-evenly;
+}
+
+.trip_link {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.trip_link:hover {
+    color: rgb(62, 128, 87);
+}
+
+.newsletter_img img {
+    width: 5rem;
+}

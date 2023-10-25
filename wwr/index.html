@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | RapidsRush Adventures</title>
-    <meta name="description" content="The home page will contain some attention grabbing information including company information, call(s) to action, appealing graphics, and other items">
+    <meta name="description"
+        content="The home page will contain some attention grabbing information including company information, call(s) to action, appealing graphics, and other items">
     <meta name="author" content="Sofia Nieves">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -21,14 +22,53 @@
         </nav>
     </header>
     <main>
+        <!-- hero section -->
         <div class="hero">
             <img class="hero_img" src="images/fly-fishing-montana-rivers.jpg" alt="hero img">
             <h1 class="h1_home"> Welcome to RapidsRush Adventures Company</h1>
             <a href="trips.html" class="button">BOOK NOW</a>
         </div>
+        <!-- hero section -->
+
+        <section class="trips_home">
+            <h2>Featured Trips</h2>
+            <div class="trips_row_home">
+                <div>
+                    <img src="images/MFS-downstream-at-funtown-GREAT-2018-1.jpg" alt="Middle Fork of the Salmon River">
+                    <h3>Middle Fork of the Salmon</h3>
+                    <a href="trips.html" class="trip_link">Learn More</a>
+                </div>
+                <div>
+                    <img src="images/1184-rogue-river.jpg" alt="Rogue River">
+                    <h3>Rogue River</h3>
+                    <a href="trips.html" class="trip_link">Learn More</a>
+                </div>
+                <div>
+                    <img src="images/Bhutan-1-2.jpeg" alt="Bhutan">
+                    <h3>Bhutan</h3>
+                    <a href="trips.html" class="trip_link">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container_home">
+                <div class="item1">
+                    <img src="images/maxresdefault.jpg" alt="Rafting Image 2">
+                </div>
+                <div class="item2">
+                    <h3>We are dedicated to you</h3>
+                    <p>Whether you’re a first time camper or seasoned river veteran, our guides and staff are there to
+                        make sure you have the trip of a lifetime.</p>
+                    <a href="contact.html" class="button_home">BOOK A TRIP</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- form -->
         <div class="newsletter_container">
-            <h3>Sign up for our Newsletter</h3>
             <form action="#" method="post" class="signup-form">
+                <h3>Sign up for our Newsletter</h3>
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -39,12 +79,12 @@
                 </div>
                 <button type="submit">Subscribe</button>
             </form>
+            <!-- form -->
         </div>
     </main>
     <footer>
         <p>© 2023 🛟RapidsRush Adventures🏞️ Sofia Nieves</p>
-        <a href="images/Captura de tela 2023-10-25 004757.png"
-            target="_blank">Wireframe</a>
+        <a href="images/wwr-wireframe-home.png" target="_blank">Wireframe</a>
         <nav class="sociallinks">
             <a href="https://facebook.com">
                 <img src="images/2018_social_media_popular_app_logo_facebook-64.webp" alt="Facebook">
@@ -58,4 +98,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
